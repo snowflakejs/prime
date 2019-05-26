@@ -1,0 +1,16 @@
+.add {
+  margin: 0 auto;
+  max-width: 720px;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+
+.add-form {
+  width: 100%;
+}
+
+.inValid {
+  border: 1px solid red;
+}
