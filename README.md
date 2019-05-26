@@ -19,7 +19,7 @@ Clone the repository and install with:<br>
 
 ### `npm run start`
 
-Runs the webpack-dev-server in development mode. Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Runs the webpack-dev-server in development mode. Open a browser and navigate to [http://localhost:3000](http://localhost:3000) to view the app.
 
 ### `npm run lint`
 
