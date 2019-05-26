@@ -11,9 +11,13 @@ Styling was done with the Bootstrap CSS framework to match the UX/UI design:
 
 * [https://s3-ap-southeast-2.amazonaws.com/prototype.primexconnect.com/test/Layout.png](https://s3-ap-southeast-2.amazonaws.com/prototype.primexconnect.com/test/Layout.png)
 
+### `Installation`
+
+Clone the repository and install with:<br>
+
 ### `npm run start`
 
-Runs the webpack-dev-server in development mode.Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Runs the webpack-dev-server in development mode. Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 ### `npm run lint`
 
