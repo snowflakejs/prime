@@ -1,9 +1,15 @@
 # prime
 Displays a list of Users in an Organisation. Each User consists of Name, Email, Roles (Owner or Employee), Organisation, Organisation Features (Trade Vault, Inventory, Analytics), Country...
 
-This app was built with ReactJS and Redux. <br>
+This app was built with ReactJS and Redux using Webpack 4. <br>
 
 The data was stored in Google Firebase. A simple form validation was implemented to check for required fields.<br>
+
+Styling was done with the Bootstrap CSS framework to match the UX/UI design:
+
+* [https://s3-ap-southeast-2.amazonaws.com/prototype.primexconnect.com/test/Data.png](https://s3-ap-southeast-2.amazonaws.com/prototype.primexconnect.com/test/Data.png)
+
+* [https://s3-ap-southeast-2.amazonaws.com/prototype.primexconnect.com/test/Layout.png](https://s3-ap-southeast-2.amazonaws.com/prototype.primexconnect.com/test/Layout.png)
 
 ### `npm run start`
 
@@ -12,7 +18,7 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 ### `npm run lint`
 
-Checkis the code for styling and syntax errors using ESLint<br>
+Checks the code for styling and syntax errors using ESLint<br>
 
 ### `npm run flow`
 
