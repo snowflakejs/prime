@@ -1,5 +1,9 @@
 # prime
-Each User consists of Name, Email, Roles (Owner or Employee), Organisation, Organisation Features (Trade Vault, Inventory, Analytics), Country...
+Displays a list of Users in an Organisation. Each User consists of Name, Email, Roles (Owner or Employee), Organisation, Organisation Features (Trade Vault, Inventory, Analytics), Country...
+
+This app was built with ReactJS and Redux. <br>
+
+The data was stored in Google Firebase. A simple form validation was implemented to check for required fields.<br>
 
 ### `npm run start`
 
