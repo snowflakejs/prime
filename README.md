@@ -17,6 +17,10 @@ Styling was done with the Bootstrap CSS framework to match the UX/UI design:
 
 Clone the repository and install with:<br>
 
+```
+npm install
+```
+
 ### `npm run start`
 
 Runs the webpack-dev-server in development mode. Open a browser and navigate to [http://localhost:3000](http://localhost:3000) to view the app.
