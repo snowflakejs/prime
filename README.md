@@ -5,7 +5,7 @@ This app was built with ReactJS and Redux using Webpack 4. <br>
 
 The data was stored in Google Firebase. A simple form validation was implemented to check for required fields.<br>
 
-The code syntax and styling was done using ESLint with Flow for type-checking the React components. <br>
+Code syntax and styling was checked using ESLint with Flow for type-checking of the React components. <br>
 
 Styling was done with the Bootstrap CSS framework to match the UX/UI design:
 
