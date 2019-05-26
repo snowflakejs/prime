@@ -3,7 +3,7 @@ Displays a list of Users in an Organisation. Each User consists of Name, Email, 
 
 This app was built with ReactJS and Redux using Webpack 4. <br>
 
-The data was stored in Google Firebase. A simple form validation was implemented to check for required fields.<br>
+The data was stored in Google Firebase. A simple form validation was implemented to check for the required fields.<br>
 
 Code syntax and styling was checked using ESLint with Flow for type-checking of the React components. <br>
 
