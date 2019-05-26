@@ -15,11 +15,15 @@ type UserType = {
   country: string,
 };
 
-type DataPropsType = {
-    users: Array<UserType>,
-    category: string,
-    onDelete: Function,
+type WorkspacePropsType = {
+  users: Array<UserType>,
+  category: string,
+  onDelete: Function,
 };
+
+type WorkspaceHeaderType = {
+  category: string,
+}
 
 type HomeViewPropsType = {
   onSelect: Function,
@@ -31,7 +35,7 @@ type HomeViewPropsType = {
   users: Array<UserType>,
 };
 
-const Data = ({ users, category, onDelete }: DataPropsType) => {
+const Workspace = ({ users, category, onDelete }: WorkspacePropsType) => {
   if (users.length === 0) {
     return (<div className="no-data">No data available for {category}</div>);
   }
@@ -76,6 +80,21 @@ const Data = ({ users, category, onDelete }: DataPropsType) => {
     </table>);
 };
 
+const PageHeader = () => (
+  <nav className="navbar navbar-light bg-light border-bottom-2">
+    <span className="navbar-brand mb-0 h1">Front End Developer Test</span>
+  </nav>);
+
+const AddButton = () => (
+  <Link to="/add">
+    <div className="btn btn-success px-5 my-1 mr-1">Add</div>
+  </Link>);
+
+const WorkspaceHeader = ({ category }: WorkspaceHeaderType) => (
+  <header className="d-flex justify-content-between align-items-center border-bottom">
+    <div className="pl-3">{category}</div>
+    <AddButton />
+  </header>);
 
 const HomeView = ({
   onSelect,
@@ -87,9 +106,7 @@ const HomeView = ({
   users,
 }: HomeViewPropsType) => (
   <div>
-    <nav className="navbar navbar-light bg-light border-bottom-2">
-      <span className="navbar-brand mb-0 h1">Front End Developer Test</span>
-    </nav>
+    <PageHeader />
     <div className="row m-0">
       <div className="col-3 border-right px-0 sticky-navigation">
         <Navigation
@@ -99,18 +116,13 @@ const HomeView = ({
         />
       </div>
       <div className="col-9 px-0">
-        <header className="d-flex justify-content-between align-items-center border-bottom">
-          <div className="pl-3">{category}</div>
-          <Link to="/add"><div className="btn btn-success px-5 my-1 mr-1">Add</div></Link>
-        </header>
-
+        <WorkspaceHeader category={category} />
         <div className="sticky-table">
           { loading
             ? <div className="loading">...Loading</div>
-            : <Data category={category} users={users} onDelete={onDelete} />
+            : <Workspace category={category} users={users} onDelete={onDelete} />
           }
         </div>
-
         <footer className="footer d-flex justify-content-center border-top pt-2"></footer>
       </div>
     </div>
