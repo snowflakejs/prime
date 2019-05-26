@@ -27,7 +27,7 @@ Runs the webpack-dev-server in development mode. Open a browser and navigate to 
 
 ### `npm run lint`
 
-Checks the code for styling and syntax errors using ESLint<br>
+Checks the code for styling and syntax errors using ESLint.<br>
 
 ### `npm run flow`
 
